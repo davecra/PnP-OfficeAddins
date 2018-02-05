@@ -8,11 +8,19 @@ This add-in is a fully functional sample that demonstrates how an organization c
 
 ### Prerequisites ###
 
-This add-in is fully ready to deploy for demonstration purposes. It uses the [easyEws library](https://github.com/davecra/easyEWS). 
+This add-in is for demonstration purposes. It uses the [easyEws library](https://github.com/davecra/easyEWS) and was developed in [Visual Studio Code](https://code.visualstudio.com/). It was created from an [Outlook Yeoman template](https://github.com/officedev/generator-office). For the best experience you will want to use VSCode and configure it for Office development, [per this blog post](https://theofficecontext.com/2018/01/25/how-to-configure-vscode-for-office-development/). 
 
-You will likely want to publish this sample on a web server as a web app once you have downloaded it, do do this you can use [Azure](https://azure.microsoft.com/en-us/documentation/scenarios/web-app). 
+Once VSCode is installed and configured you will need to run "npm init" from the Terminal Window (CTRL+`) to initialize the node_modules folder. This will use the package.json included to pull down the following prerequisite libraries:
 
-Before you publish this, you will want to modify the manifest with the proper URLS and email address where you want the secuirty email's to be sent by the users. For example, if you publish to the server http://azuretenant.contoso.com/webapp/ and the email to be securityteam@contoso.com,  you will want to modify these lines:
+ - core-js v2.4.1
+ - office-ui-fabric-js v1.3.0
+ - jquery v3.1.1
+ - office-addin-validator v1.0.1
+ - easyews v1.0.8
+
+Once the prohect is initialized, you will likely want to publish this sample on a web server as a web app once you have downloaded it, do do this you can use [Azure](https://azure.microsoft.com/en-us/documentation/scenarios/web-app). 
+
+However, before you publish this, you will want to modify the manifest with the proper URLS and email address where you want the secuirty email's to be sent by the users. For example, if you publish to the server http://azuretenant.contoso.com/webapp/ and the email to be securityteam@contoso.com,  you will want to modify these lines:
 
 ```xml
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-80.png" />
