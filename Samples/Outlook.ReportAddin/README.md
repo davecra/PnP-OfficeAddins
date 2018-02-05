@@ -1,4 +1,4 @@
-#Outlook Report Suspicious Email Addin#
+# Outlook Report Suspicious Email Addin #
 This add-in is a fully functional sample that demonstrates how an organization can use the new OfficeJS API in to create and deploy and Outlook add-in to help user report suspicious emails they recieve to the proper security team.
 
 ### Applies to ###
